@@ -1,0 +1,18 @@
+.hero {
+	padding: 20px;
+	background: url(../img/contact.JPG)no-repeat center top;
+	background-size: cover;
+	text-align: center;
+	height: 500px;
+	
+}
+.hero-main h2{
+	color: #fff;
+    margin: 30px 0px 15px 0px;
+}
+.hero-main form {
+	padding: 10px 0px;
+    background: #de119f45;
+    margin: 0px 45px;
+
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--Font Awesome-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!--Bootstrap file-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!--Theme file-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+	<section class="hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 offset-md-4 hero-main">
+					<h2>Calculator</h2>
+
+				    <form name="calculator">
+				    	<input name="display" readonly="">
+				    	<br><br>
+				    	<input calss="form-control" type="button" name="one" value="1" onclick="addOne();">
+				    	<input type="button" name="two" value="2" onclick="addTwo();">
+				    	<input type="button" name="three" value="3" onclick="addThree();">
+				    	<input type="button" name="addition" value="+" onclick="addPlus();">
+				    	<br><br>
+				    	<input type="button" name="four" value="4" onclick="addFour();">
+				    	<input type="button" name="five" value="5" onclick="addFive();">
+				    	<input type="button" name="six" value="6" onclick="addSix();">
+				    	<input type="button" name="substraction" value="-" onclick="addMinus();">
+				    	<br><br>
+				    	<input type="button" name="seven" value="7" onclick="addSeven();">
+				    	<input type="button" name="eight" value="8" onclick="addEight();">
+				    	<input type="button" name="nine" value="9" onclick="addNine();">
+				    	<input type="button" name="multiplication" value="*" onclick="addMultiplication();">
+				    	<br><br>
+				    	<input type="button" name="clear" value="C" onclick="addClear();">
+				    	<input type="button" name="memory" value="M">
+				    	<input type="button" name="equal" value="=" onclick="addEqual();">
+				    	<input type="button" name="division" value="/" onclick="addDivision();">	
+				    </form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script type="text/javascript">
+
+
+		function addOne() {
+
+			document.calculator.display.value +=1;
+
+		}
+
+		function addTwo() {
+
+			document.calculator.display.value +=2;
+
+		}
+		function addThree() {
+
+			document.calculator.display.value +=3;
+
+		}
+		function addPlus() {
+
+			document.calculator.display.value +="+";
+
+		}
+		function addFour() {
+
+			document.calculator.display.value +=4;
+
+		}
+		function addFive() {
+
+			document.calculator.display.value +=5;
+
+		}
+		function addSix() {
+
+			document.calculator.display.value +=6;
+
+		}
+		function addMinus() {
+
+			document.calculator.display.value +="-";
+
+		}
+		function addSeven() {
+
+			document.calculator.display.value +=7;
+
+		}
+		function addEight() {
+
+			document.calculator.display.value +=8;
+
+		}
+		function addNine() {
+
+			document.calculator.display.value +=9;
+
+		}
+		function addMultiplication() {
+
+			document.calculator.display.value +="*";
+
+		}
+		function addDivision() {
+
+			document.calculator.display.value +="/";
+
+		}
+		function addClear() {
+
+			document.calculator.display.value ="";
+
+		}
+		function addEqual() {
+
+			var result = eval(document.calculator.display.value);
+			document.calculator.display.value = result;
+
+		}
+		
+
+		
+
+        
+
+	</script>
+
+	<!--jquery file-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+    <!--bootstrap javascript file-->
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+</body>
+</html>
